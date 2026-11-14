@@ -22,7 +22,7 @@ assert.ok(calc.includes('const [tariffId, setTariffId] = useState("regular")'), 
 assert.ok(calc.includes('calculateVisit(rate && area > 0 ? [rate * area] : [])'));
 const html = readFileSync('dist/index.html', 'utf8');
 const metrika = readFileSync('dist/metrika.js', 'utf8');
-assert.ok(metrika.includes('var id = 0;'), 'Wrong city counter');
+assert.ok(metrika.includes('var id = 114256874;'), 'Wrong city counter');
 for (const goal of ['click_phone','click_max','click_telegram','click_whatsapp','calc_interaction']) assert.ok(metrika.includes(goal), 'Missing goal event '+goal);
 assert.ok(html.includes('https://vershina29.ru/'));
 assert.ok(html.includes('Архангельске'));

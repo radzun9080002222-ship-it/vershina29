@@ -1,4 +1,4 @@
-name: Check Naberezhnye Chelny release
+name: Check Arkhangelsk release
 on:
   push:
     branches: [main]
