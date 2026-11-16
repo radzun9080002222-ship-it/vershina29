@@ -33,7 +33,7 @@ for (const match of html.matchAll(/(?:src|href)=["']([^"']+)["']/g)) {
     assert.ok(existsSync(`dist/${url.replace(/^(?:\.\/|\/)/, '')}`), `Missing asset ${url}`);
   }
 }
-for (const file of ['CNAME', 'favicon.ico', 'robots.txt', 'sitemap.xml', 'privacy.html', 'site.webmanifest', 'images/og-arkhangelsk.jpg', 'images/hero-arkhangelsk.webp']) {
+for (const file of ['CNAME', 'favicon.ico', 'robots.txt', 'sitemap.xml', 'privacy.html', 'site.webmanifest', 'images/og-arkhangelsk.jpg', 'images/hero-arkhangelsk-clean-apartment.webp']) {
   assert.ok(existsSync(`dist/${file}`), `Missing file ${file}`);
 }
 assert.equal(readFileSync('dist/CNAME', 'utf8').trim(), 'vershina29.ru');
